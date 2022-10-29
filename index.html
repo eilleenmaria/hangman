@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Hangman game</title>
+</head>
+
+<body>
+    <main>
+        <div class="logoAlura">
+            <img class="imgLogo" src="image/Vector.png">
+        </div>        
+        <div id="div-start"class="div-start">
+            <input type="submit" value="START" id="game-start"
+            class="btn-start" onclick="gameStart()">
+            <input type="submit" value="ADD WORD" id="link-add-word"
+            class="btn-linkaddWord" onclick="linkaddWord()">                
+        </div>
+        <div id="wordsecret"> 
+                <div class="wordsecret">
+                    <label class="labelsecretword">Add secret word</label>
+                <input type="text" id="inputaddword" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="inputaddword">
+                <input type="submit" value="SAVE WORD" id="add-word" 
+            class="btn-addWord" onclick="addWord()">                
+                </div>         
+                
+            
+        </div>
+        
+        <div id="getHangman"  class="canvas">
+            <canvas id="hangman" width="960" height="500">
+
+            </canvas>
+            <div class="group-button">
+                
+                <input type="submit" class="btn-generic " value="QUIT GAME" id="game-quit" >
+            </div>
+        </div>      
+    </main>  
+    <script src="hangman.js"></script>
+    <script src="canvas.js"></script>
+    <script src="word.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,142 @@
+*{
+    margin: 0; padding: 0;
+}
+html, body, main{
+    height: 100%;   
+    width: 100%;
+}
+body{    
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    background-image: url(image/sunset-g3976287ba_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    opacity: 0.9;
+}
+.logoAlura{
+    width: 4%;
+    height: 7%;
+    position: absolute;
+    display: block;
+    /* margin: 0 auto; */
+    left: 2%;
+    top: 2%;
+}
+.imgLogo{
+    
+    width: 100%;
+    height: 100%;
+}
+.div-start{
+    width: 30%;
+    height:20% ;
+    position:absolute;
+    display: block;
+    left: 40%;
+    top: 50%;   
+}
+.btn-linkaddWord{
+    width: 100%;
+    height: 45%;
+    color: #685044; 
+    background: #FED18C;
+    border-radius: 20px; 
+    margin-top: 10px;
+    border: 0;
+    
+}
+
+.btn-start{
+    width: 100%;
+    height: 45%;
+    color: #FED18C; 
+    background: #685044;
+    border-radius: 20px; 
+}
+
+.canvas{
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+#getHangman{
+    display: none;
+}
+
+#hangman{
+    background-image: url(image/gato.jpg);    
+    box-shadow: 10px 10px 15px 10px rgb(26 72 100 / 30%);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    margin: auto;
+}
+.group-button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    
+    position: absolute;
+    width: 20%;
+    height: 6%;
+    left: 376px;
+    top: 510px;
+    
+}
+.btn-generic{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 18px;
+    gap: 8px;    
+    color: #FED18C; 
+    background: #685044;
+    border-radius: 20px; 
+}
+
+#wordsecret{ 
+    background-color: blue;
+    display: none;
+    
+}
+.wordsecret{
+    /* background-color: aquamarine; */
+    position: absolute;
+    left: 40%;
+    top: 25%;    
+    width: 30%;
+    height: 30%;
+}
+
+.labelsecretword{
+    display: block;
+    width: 100%;
+    height: 20% !important;
+    color: #685044;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.inputaddword{
+    display: block;
+    width: 100%;
+    height: 20% ;
+    border-radius: 10px;
+    background-color:#FED18C ;
+    color: #685044;  
+    }
+.btn-addWord{
+    display: block;
+    width: 100%;
+    height: 30% ;
+    color: #FED18C; 
+    background: #685044; 
+    border-radius: 20px; 
+    margin-top: 20px;
+    border: 0;
+}
+
